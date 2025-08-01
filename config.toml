@@ -1,0 +1,22 @@
+[general]
+watch_dir = "E:\\tmp\\autotests"
+method = "scp"
+
+[[targets]]
+host = "192.168.240.2"
+port = 7878
+path = "C:\\tmp\\autotest"
+
+
+[[targets]]
+host = "localhost"
+port = 7878
+path = "D:\\Anaken\\Rust\\rustsync\\sync"
+
+[ignore]
+ignore_patterns = [
+  "*.log",
+  "*.tmp",
+  "node_modules/**",
+  ".git/**"
+]
